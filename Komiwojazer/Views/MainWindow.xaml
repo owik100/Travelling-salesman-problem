@@ -1,0 +1,145 @@
+﻿<Controls:MetroWindow x:Class="Komiwojazer.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="Komiwojażer"
+        Height="800" Width="1280"
+        MinHeight="800" MinWidth="1280"
+        WindowStartupLocation="CenterScreen">
+    <Grid x:Name="grid" x:FieldModifier="public" Background="#FFFFF592">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="map" HorizontalAlignment="Left" Height="749" Margin="10,10,10,10" VerticalAlignment="top" Grid.Column="0" Width="866" Source="/Komiwojazer;component/Images/mapaPolski.jpg" Stretch="None"/>
+
+        <!--Small-->
+        <CheckBox x:Name="s_ch_1" Tag="Bolesławiec" Margin="168,520,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_2" Tag="Lubin" Margin="218,499,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_3" Tag="Nysa Zamłynie" Margin="317,610,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        <CheckBox x:Name="s_ch_4" Tag="Racibórz" Margin="396,648,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_5" Tag="Bytom" Margin="444,598,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_6" Tag="Zabrze" Margin="449,608,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_7" Tag="Milków" Margin="504,612,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_8" Tag="Tychy" Margin="669,656,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_9" Tag="Krosno" Margin="693,660,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_10" Tag="Sanok" Margin="732,672,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_11" Tag="Przemyśl" Margin="772,634,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_12" Tag="Jarosław" Margin="762,606,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_13" Tag="Dębica" Margin="657,617,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_14" Tag="Mielec" Margin="654,588,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_15" Tag="Tarnobrzeg" Margin="669,550,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_16" Tag="Stalowa Wola" Margin="698,544,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_17" Tag="Zamość" Margin="789,508,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_18" Tag="Kraśnik" Margin="705,499,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_19" Tag="Ostrowiec Świętokrzycki" Margin="638,508,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_20" Tag="Skarżysko-Kamienna" Margin="592,491,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_21" Tag="Radomsko" Margin="481,513,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_22" Tag="Bełchatów" Margin="468,475,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_23" Tag="Piotrków Trybunalski" Margin="496,466,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_24" Tag="Tomaszów Mazowiecki" Margin="517,449,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_25" Tag="Pabianice" Margin="463,438,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_26" Tag="Sieradz" Margin="415,452,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_27" Tag="Ostrów Wielkopolski" Margin="342,452,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_28" Tag="Leszno" Margin="243,440,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_29" Tag="Konin" Margin="370,377,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_30" Tag="Kutno" Margin="454,367,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_31" Tag="Skierniewice" Margin="521,392,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_32" Tag="Żyrardów" Margin="543,377,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_33" Tag="Sochaczew" Margin="524,358,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_34" Tag="Piaseczno" Margin="588,367,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_35" Tag="Wołomin" Margin="600,330,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_36" Tag="Legionowo" Margin="574,327,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_37" Tag="Siedlce" Margin="683,339,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_38" Tag="Biała Podlaska" Margin="750,346,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_39" Tag="Puławy" Margin="674,440,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_40" Tag="Chełm" Margin="798,452,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_41" Tag="Łomża" Margin="644,215,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_42" Tag="Ostrołęka" Margin="608,233,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_43" Tag="Ciechanów" Margin="539,270,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_44" Tag="Gniezno" Margin="313,343,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_45" Tag="Wagrowiec" Margin="270,310,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_46" Tag="Piła" Margin="239,270,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_47" Tag="Stargard Szczeciński" Margin="108,258,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_48" Tag="Świnoujście" Margin="45,190,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_49" Tag="Kołobrzeg" Margin="140,150,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_50" Tag="Szczecinek" Margin="230,202,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_51" Tag="Chojnice" Margin="295,196,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_52" Tag="Stargard Gdański" Margin="362,154,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_53" Tag="Tczew" Margin="381,135,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_54" Tag="Słupsk" Margin="246,101,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_55" Tag="Lębork" Margin="298,88,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_56" Tag="Wejherowo" Margin="333,74,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_57" Tag="Malbork" Margin="401,140,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_58" Tag="Grudziądz" Margin="389,212,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_59" Tag="Kwidzyń" Margin="399,182,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_60" Tag="Ełk" Margin="652,129,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="s_ch_61" Tag="Suwałki" Margin="688,86,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxSmall}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!--Medium-->
+        <CheckBox x:Name="m_ch_62" Tag="Wrocław" Margin="282,525,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_63" Tag="Wałbrzych" Margin="230,574,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_64" Tag="Opole" Margin="362,574,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_65" Tag="Rybnik" Margin="418,639,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_66" Tag="Bielsko-Biała" Margin="463,672,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        <CheckBox x:Name="m_ch_67" Tag="Tychy" Margin="454,634,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_68" Tag="Katowice" Margin="455,615,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_69" Tag="Sosnowiec" Margin="472,606,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_70" Tag="Gliwice" Margin="426,614,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_71" Tag="Kraków" Margin="531,630,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        <CheckBox x:Name="m_ch_72" Tag="Tarnów" Margin="620,626,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_73" Tag="Rzeszów" Margin="701,608,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_74" Tag="Częstochowa" Margin="455,544,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_75" Tag="Kielce" Margin="574,520,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_76" Tag="Legnica" Margin="211,519,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_77" Tag="Radom" Margin="606,446,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_78" Tag="Lublin" Margin="720,446,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_79" Tag="Łódź" Margin="468,421,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_80" Tag="Zielona Góra" Margin="154,432,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_81" Tag="Poznań" Margin="259,361,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_82" Tag="Gorzów Wielkopolski" Margin="122,330,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_83" Tag="Szczecin" Margin="64,245,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_84" Tag="Bydgoszcz" Margin="333,262,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_85" Tag="Toruń" Margin="381,270,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_86" Tag="Włocławek" Margin="421,313,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_87" Tag="Płock" Margin="473,319,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        <CheckBox x:Name="m_ch_88" Tag="Olsztyn" Margin="509,154,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+        <CheckBox x:Name="m_ch_89" Tag="Elbląg" Margin="421,118,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_90" Tag="Gdańsk" Margin="362,99,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_91" Tag="Gdynia" Margin="350,80,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_92" Tag="Białystok" Margin="724,202,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_93" Tag="Koszalin" Margin="181,140,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox x:Name="m_ch_94" Tag="Kalisz" Margin="359,432,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxMedium}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+        <!--Big-->
+        <CheckBox x:Name="ch_95" Tag="Warszawa" Margin="576,342,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Grid.Column="0" Style="{StaticResource ResourceKey=CircleCheckboxBig}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="left">
+            <Separator Width="5"  Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" Background="#FFFEE322" />
+        </StackPanel>
+
+        <GroupBox Grid.Column="1" Header="Distance between 2 cities" HorizontalAlignment="Stretch" Height="221" Margin="10,10,0,0" VerticalAlignment="Top" Width="362">
+            <StackPanel>
+                <TextBox x:Name="textBoxDistance" Height="122" FontSize="25" TextWrapping="Wrap" IsReadOnly="True"/>
+                <Button Content="Check Distance" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_CheckDistance_Click" FontSize="25" Margin="10" x:Name="checkDistanceButton"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Grid.Column="1" Content="Clear" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25" Margin="130,0,100,23" Click="ButtonClearClick" Width="146"/>
+
+        <GroupBox Grid.Column="1" Header="Shortest Way" HorizontalAlignment="Stretch" Height="434" Margin="15,250,5,0" VerticalAlignment="top" Width="362">
+            <StackPanel>
+                <TextBox x:Name="textBoxShortestWay" Height="336" FontSize="25" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+                <Button Content="Shortest Way" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Way_Click" FontSize="25" Margin="10"/>
+            </StackPanel>
+        </GroupBox>
+        <CheckBox Content="All" Grid.Column="1" HorizontalAlignment="Left" Margin="39,647,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1"/>
+
+
+    </Grid>
+</Controls:MetroWindow>
+    
+    
